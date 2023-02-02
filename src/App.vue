@@ -13,7 +13,7 @@ export default {
   <AppHeader />
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @use "./styles/partials/reset.scss" as *;
 @use "./styles/main.scss" as *;
 </style>
