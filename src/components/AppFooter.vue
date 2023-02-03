@@ -53,38 +53,44 @@ export default {
         <!-- Section 1 -->
         <section class="links">
             <div class="container">
-                <div class="col">
-                    <h3>DC COMICS</h3>
-                    <ul>
-                        <li v-for="comic in comics">
-                            <a href="#">{{ comic }}</a>
-                        </li>
-                    </ul>
+                <div class="cols">
+                    <div class="col">
+                        <h3>DC COMICS</h3>
 
-                    <h3>SHOP</h3>
-                    <ul>
-                        <li v-for="shop in shops">
-                            <a href="#">{{ shop }}</a>
-                        </li>
-                    </ul>
-                </div>
+                        <ul>
+                            <li v-for="comic in comics">
+                                <a href="#">{{ comic }}</a>
+                            </li>
+                        </ul>
 
-                <div class="col center">
-                    <h3>DC</h3>
-                    <ul>
-                        <li v-for="link in DC">
-                            <a href="#">{{ link }}</a>
-                        </li>
-                    </ul>
-                </div>
+                        <h3 class="mt-top">SHOP</h3>
 
-                <div class="col">
-                    <h3>SITES</h3>
-                    <ul>
-                        <li v-for="site in sites">
-                            <a href="#"> {{ site }}</a>
-                        </li>
-                    </ul>
+                        <ul>
+                            <li v-for="shop in shops">
+                                <a href="#">{{ shop }}</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col center">
+                        <h3>DC</h3>
+
+                        <ul>
+                            <li v-for="link in DC">
+                                <a href="#">{{ link }}</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <h3>SITES</h3>
+
+                        <ul>
+                            <li v-for="site in sites">
+                                <a href="#">{{ site }}</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="bg-logo">
@@ -116,6 +122,7 @@ export default {
 
 <style lang="scss" scoped>
 @use "../styles/partials/reset.scss" as *;
+@use "../styles/partials/mixins.scss" as *;
 
 footer {
     // Section 1
@@ -123,39 +130,42 @@ footer {
         background-image: url(../assets/img/footer-bg.jpg);
         background-size: cover;
         color: $text-white;
-        height: 400px;
 
         .container {
-            display: flex;
+            @include space-between;
             position: relative;
+            overflow: hidden;
 
-            .col {
-                padding: 40px 0;
+            .cols {
+                display: flex;
 
-                &.center {
-                    padding: 40px 25px;
-                }
+                .col {
+                    padding: 30px 0;
 
-                h3 {
-                    margin: 15px 0;
-                }
+                    .mt-top {
+                        margin-top: 20px;
+                    }
 
-                ul li a {
-                    color: #797979;
-                    font-size: $font-small;
-                }
+                    a {
+                        color: #5f5f5f;
+                        font-size: $font-small;
+                    }
 
-                .bg-logo {
-                    width: 40%;
-                    height: 40%;
-                    overflow: hidden;
-
-                    img {
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
+                    &.center {
+                        padding-inline: 30px;
                     }
                 }
+            }
+
+            .bg-logo {
+                width: 500px;
+                height: 350px;
+            }
+
+            .bg-logo img {
+                position: absolute;
+                right: 0;
+                top: -80px;
             }
         }
     }
@@ -166,24 +176,20 @@ footer {
         background-color: #303030;
 
         .container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            @include space-between;
             height: 100%;
 
             .sign-up {
-                color: white;
+                color: $text-white;
                 padding: 10px;
                 border: 2px solid $primary;
             }
 
             .social {
-                display: flex;
-                align-items: center;
+                @include center;
 
                 ul {
-                    display: flex;
-                    align-items: center;
+                    @include center;
 
                     li {
                         padding: 0 10px;

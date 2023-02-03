@@ -109,8 +109,8 @@ main {
         .cards {
             display: flex;
             flex-wrap: wrap;
-            margin-inline: -10px;
-            padding: 50px 0;
+            margin-inline: -15px;
+            padding: 30px 0;
         }
     }
 }

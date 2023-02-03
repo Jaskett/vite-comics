@@ -80,6 +80,7 @@ export default {
 
 <style lang="scss" scoped>
 @use "../styles/partials/reset.scss" as *;
+@use "../styles/partials/mixins.scss" as *;
 
 header {
     height: 95px;
@@ -87,9 +88,7 @@ header {
 
     .container {
         height: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include space-between;
 
         .logo {
             display: flex;
@@ -107,8 +106,9 @@ header {
                 font-size: $font-medium;
                 padding-inline: 15px;
 
-                &:hover {
-                    border-bottom: 4px solid $primary;
+                &:hover,
+                &.active {
+                    border-bottom: 6px solid $primary;
                 }
 
                 a {
