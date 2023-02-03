@@ -88,7 +88,7 @@ header {
 
     .container {
         height: 100%;
-        @include space-between;
+        @include flex ($type: 'both');
 
         .logo {
             display: flex;

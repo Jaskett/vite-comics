@@ -132,7 +132,7 @@ footer {
         color: $text-white;
 
         .container {
-            @include space-between;
+            @include flex ($type: 'both');
             position: relative;
             overflow: hidden;
 
@@ -176,7 +176,7 @@ footer {
         background-color: #303030;
 
         .container {
-            @include space-between;
+            @include flex ($type: 'both');
             height: 100%;
 
             .sign-up {
@@ -186,10 +186,10 @@ footer {
             }
 
             .social {
-                @include center;
+                @include flex ($type: 'center');
 
                 ul {
-                    @include center;
+                    @include flex ($type: 'center');
 
                     li {
                         padding: 0 10px;
