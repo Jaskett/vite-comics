@@ -88,6 +88,7 @@ export default {
                 </div>
 
                 <div class="bg-logo">
+                    <img src="../assets/img/dc-logo-bg.png" alt="">
                 </div>
             </div>
         </section>
@@ -122,6 +123,7 @@ footer {
         background-image: url(../assets/img/footer-bg.jpg);
         background-size: cover;
         color: $text-white;
+        height: 400px;
 
         .container {
             display: flex;
@@ -142,16 +144,18 @@ footer {
                     color: #797979;
                     font-size: $font-small;
                 }
-            }
 
-            .bg-logo {
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                background-image: url(../assets/img/dc-logo-bg.png);
-                background-repeat: no-repeat;
-                right: -250px;
-                background-position: 50%;
+                .bg-logo {
+                    width: 40%;
+                    height: 40%;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
             }
         }
     }
