@@ -4,7 +4,7 @@ export default {
 
     data() {
         return {
-            logo: "img/dc-logo.png",
+            logo: "src/assets/img/dc-logo.png",
             links: [
                 {
                     text: "CHARACTERS",

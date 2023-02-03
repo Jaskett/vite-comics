@@ -65,11 +65,11 @@ export default {
                 "DC Power Visa"
             ],
             socials: [
-                "img/footer-facebook.png",
-                "img/footer-twitter.png",
-                "img/footer-youtube.png",
-                "img/footer-pinterest.png",
-                "img/footer-periscope.png"
+                "src/assets/img/footer-facebook.png",
+                "src/assets/img/footer-twitter.png",
+                "src/assets/img/footer-youtube.png",
+                "src/assets/img/footer-pinterest.png",
+                "src/assets/img/footer-periscope.png"
             ]
         }
     }
@@ -142,7 +142,7 @@ export default {
                     <span>FOLLOW US</span>
                     <ul>
                         <li v-for="social in socials">
-                            <img :src="social" alt="">
+                            <img :src="social" alt="Social">
                         </li>
                     </ul>
                 </div>
