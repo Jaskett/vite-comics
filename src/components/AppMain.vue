@@ -91,12 +91,15 @@ export default {
     <main>
         <div class="container">
 
+            <!-- Bottone Current -->
             <a href="#" class="button current">CURRENT SERIES</a>
 
+            <!-- Contenitore per ogni singola card -->
             <div class="cards">
                 <Card v-for="card in cards" :thumb="card" />
             </div>
 
+            <!-- Bottone Load -->
             <a href="#" class="button load">LOAD MORE</a>
         </div>
     </main>

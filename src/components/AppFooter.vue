@@ -54,6 +54,7 @@ export default {
         <section class="links">
             <div class="container">
                 <div class="cols">
+                    <!-- Colonna Sx -->
                     <div class="col">
                         <h3>DC COMICS</h3>
 
@@ -72,6 +73,7 @@ export default {
                         </ul>
                     </div>
 
+                    <!-- Colonna Centrale -->
                     <div class="col center">
                         <h3>DC</h3>
 
@@ -82,6 +84,7 @@ export default {
                         </ul>
                     </div>
 
+                    <!-- Colonna Dx -->
                     <div class="col">
                         <h3>SITES</h3>
 
@@ -103,10 +106,10 @@ export default {
         <section class="sub-footer">
             <div class="container">
                 
-                <!-- button -->
+                <!-- Button -->
                 <a class="sign-up">SIGN-UP NOW!</a>
                 
-                <!-- social -->
+                <!-- Social -->
                 <div class="social">
                     <span>FOLLOW US</span>
                     <ul>

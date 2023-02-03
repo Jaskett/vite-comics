@@ -65,13 +65,17 @@ export default {
 <template>
     <header>
         <div class="container">
+            <!-- Logo -->
             <a href="#" class="logo">
                 <img :src="logo" alt="Logo">
             </a>
 
+            <!-- Nav Bar -->
             <nav>
                 <ul>
-                    <li v-for="link in links"><a href="#">{{ link.text }}</a></li>
+                    <li v-for="(link, index) in links" :key="index">
+                        <a href="link.url" :class="{active: link.current}">{{ link.text }}</a>
+                    </li>
                 </ul>
             </nav>
         </div>

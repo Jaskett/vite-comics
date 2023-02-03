@@ -3,7 +3,6 @@ import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 import BlueSection from './components/BlueSection.vue';
 import AppFooter from './components/AppFooter.vue';
-
 import AppJumbo from './components/AppJumbo.vue';
 
 export default {

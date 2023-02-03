@@ -8,6 +8,7 @@ export default {
 </script>
 
 <template>
+    <!-- Card -->
     <div class="card">
         <div>
             <img :src="thumb.thumb" :alt="thumb.series">
